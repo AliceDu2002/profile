@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel="icon" href="icon.jpg">
+ </head>
+ <body>
+ <style type="text/css">
+  body {
+    font-family: Georgia, "Times New Roman",Times, serif;
+    color: #009393;
+    background-color: #C1FFE4 }
+  a:link{color: #009393;}
+  a:visited{color: red;}
+  </style>
+  <a href="http://www.fg.tp.edu.tw/bin/home.php">Graduate High School: Taipei First Girl High School</a><br>
+  <a href="https://web.ee.ntu.edu.tw/">Major: National Taiwan University Department of Electronic Engineering</a><br><br>
+  <p>Hobbies:</p>
+  <a href="http://tw.everyonepiano.com/">1. Playing the piano</a><br>
+  <a href="https://www.youtube.com/?gl=TW&hl=zh-tw">2. Watching Youtube</a><br>
+  <a href="https://shopee.tw/">3. Shopping</a><br><br>
+  <img src="311052.jpg" width="320" height="450"><br>
+  <audio src="music.mp3" autoplay loop controls></audio>
+  <p id="showbox"></p>
+  <script language="JavaScript">
+    function ShowTime(){
+    　var NowDate=new Date();
+      var mon=NowDate.getMonth()+1;
+    　var date=NowDate.getDate();
+    　var year=NowDate.getFullYear();
+    　var h=NowDate.getHours();
+    　var m=NowDate.getMinutes();
+    　var s=NowDate.getSeconds();　
+    　document.getElementById('showbox').innerHTML = mon+'-'+date+'-'+year+' '+h+':'+m+':'+s;
+    }
+   setInterval(ShowTime,1000)
+   </script>
+   </body>
+</html>
